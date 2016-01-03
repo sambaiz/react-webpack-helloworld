@@ -1,4 +1,7 @@
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+
 import React, { Component, PropTypes } from 'react'
+import { Button } from 'react-bootstrap'
 
 class Hello extends Component {
 
@@ -22,9 +25,9 @@ class Hello extends Component {
       show = "clicked"
     }
     return (
-      <h1 onClick={this.handleClick.bind(this)}>
+      <Button onClick={this.handleClick.bind(this)}>
         {show}
-      </h1>
+      </Button>
     )
   }
 }
